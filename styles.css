@@ -1,0 +1,209 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a2e; /* Fondo oscuro */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Contenedor principal */
+.container {
+    width: 90%;
+    max-width: 900px; /* Más ancho en PC */
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    margin: 20px auto;
+}
+
+/* Encabezado */
+.header {
+    background-color: #4b0082; /* Morado oscuro */
+    color: white;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+/* Menú de navegación */
+nav {
+    background-color: #333;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    margin: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 12px 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #4b0082;
+}
+
+/* Estilos para imágenes */
+img {
+    width: 100%;
+    max-width: 400px; /* Más grandes en PC */
+    border-radius: 12px; /* Bordes redondeados */
+    border: 6px solid #4b0082; /* Marco morado */
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.7); /* Sombra */
+    display: block;
+    margin: 15px auto;
+}
+
+/* Tamaños específicos de imagen */
+.img-pequena {
+    width: 150px;
+    height: auto;
+}
+
+.img-mediana {
+    width: 300px;
+    height: auto;
+}
+
+.img-grande {
+    width: 600px;
+    height: auto;
+}
+
+/* Formulario */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 500px; /* Más ancho en PC */
+    margin: auto;
+}
+
+label {
+    font-size: 18px;
+    margin-top: 12px;
+    width: 100%;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin: 6px 0;
+    border: 2px solid #4b0082;
+    border-radius: 6px;
+    font-size: 18px;
+}
+
+button {
+    width: 100%;
+    max-width: 500px;
+    padding: 12px;
+    background: #4b0082;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 12px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #35006b;
+}
+
+/* Estilos para la validación */
+.error {
+    color: red;
+    font-size: 16px;
+    display: block;
+}
+
+/* Pie de página */
+.footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    label {
+        font-size: 16px;
+    }
+
+    input, button {
+        width: 100%;
+        font-size: 16px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1000px;
+        padding: 30px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    form {
+        max-width: 600px;
+    }
+}
